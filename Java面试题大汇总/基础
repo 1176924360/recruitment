@@ -1,0 +1,22 @@
+## 一个".java"源文件中是否可以包括多个类（不是内部类）？有什么限制？
+
+
+## Java有没有goto?
+## 说说&和&&的区别。
+## 在JAVA中如何跳出当前的多重嵌套循环？
+## switch语句能否作用在byte上，能否作用在long上，能否作用在String上?
+## short s1= 1; s1 = （s1+1是int类型，而等号左边的是short类型，所以需要强转）1 + 1;有什么错? short s1 = 1; s1 += 1;有什么错?(没有错)
+## char型变量中能不能存贮一个中文汉字?为什么?
+## 用最有效率的方法算出2乘以8等於几?
+## 使用final关键字修饰一个变量时，是引用不能变，还是引用的对象不能变？
+## 静态变量和实例变量的区别？
+## 是否可以从一个static方法内部发出对非static方法的调用？
+## Integer与int的区别
+## Math.round(11.5)等於多少?Math.round(-11.5)等於多少?
+## Overload和Override的区别？Overloaded的方法是否可以改变返回值的类型?
+## 接口是否可继承接口?抽象类是否可实现(implements)接口?抽象类是否可继承具体类(concreteclass)?抽象类中是否可以有静态的main方法？
+## Java中实现多态的机制是什么？
+## abstractclass和interface语法上有什么区别?
+## abstract的method是否可同时是static,是否可同时是native，是否可同时是synchronized?
+## 内部类可以引用它的包含类的成员吗？有没有什么限制？
+## String s = "Hello";s = s + "world!";这两行代码执行后，原始的String对象中的内容到底变了没有？
