@@ -21,6 +21,7 @@ public class ContainerNotSafeDemo {
         CopyOnWriteArraySet<String> writeArraySet = new CopyOnWriteArraySet<>();
         //map
         Map<String, String> map = new HashMap<>();
+        Map<String, String> table = new Hashtable<>();
         ConcurrentHashMap<String, String> concurrentHashMap = new ConcurrentHashMap<>();
         for (int i = 0; i < 30; i++) {
             /**
