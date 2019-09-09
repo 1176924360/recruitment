@@ -39,4 +39,5 @@ handler：当达到了线程边界和队列容量，无法及时处理时，reje
 
 
 ## volatile
-[demo1](volatile/MyData01.java)
+[demo1](volatile/MyData01.java)<br/>
+此demo使用了volatile解决了内存可见性的问题，当共享变量没有用volatile修饰时，线程AAA将共享变量改变成60后，main线程无法察觉
