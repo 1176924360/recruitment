@@ -10,10 +10,18 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class ContainerNotSafeDemo {
     //集合类不安全的例子
     public static void main(String[] args) {
+         //list
         List<String> list = new ArrayList<>();
         Vector<String> vector = new Vector<>();
         List<Object> synchronizedList = Collections.synchronizedList(new ArrayList<>());
         CopyOnWriteArrayList<String> writeArrayList = new CopyOnWriteArrayList<>();
+        //set
+        Set<String> set = new HashSet<>();
+        Set<String> synchronizedSet = Collections.synchronizedSet(new HashSet<>());
+        CopyOnWriteArraySet<String> writeArraySet = new CopyOnWriteArraySet<>();
+        //map
+        Map<String, String> map = new HashMap<>();
+        ConcurrentHashMap<String, String> concurrentHashMap = new ConcurrentHashMap<>();
         for (int i = 0; i < 30; i++) {
             /**
              * java.util.ConcurrentModificationException产生了此问题，并发修改异常
