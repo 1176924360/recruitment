@@ -40,4 +40,8 @@ handler：当达到了线程边界和队列容量，无法及时处理时，reje
 
 ## volatile
 [demo1](volatile/MyData01.java)<br/>
-此demo使用了volatile解决了内存可见性的问题，当共享变量没有用volatile修饰时，线程AAA将共享变量改变成60后，main线程无法察觉
+此demo使用了volatile解决了内存可见性的问题，当共享变量没有用volatile修饰时，线程AAA将共享变量改变成60后，main线程无法察觉<br/>
+[demo1](volatile/MyData02.java)<br/>
+问题：volatile不可以保证原子性，当用20个线程将number++1000次时，最终得到的值与预期值不符合
+当各个线程将主内存中的值拷贝到自己的工作内存中，当他们都想将处理后的值写入到主内存时，由于一个线程写的时候，其他线程被挂起。在写完时，被挂起的线程继续往主内存写，此时导致写回到主内存的数据没有+1，出现数据丢失的现象
+解决：1、可以使用synchronized修饰，使其同步，但是这个方法太重了 2、使用JUC下的Atomic包
